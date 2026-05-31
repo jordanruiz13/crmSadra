@@ -1,0 +1,19 @@
+
+
+
+Options All -Indexes
+
+# Activar el motor de reescritura
+RewriteEngine On
+
+# CONDICIÓN 1: Si la URL solicitada es un archivo real (como un .css, .js o .png), NO redirigir
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# CONDICIÓN 2: Si la URL solicitada es una carpeta física real, NO redirigir
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# REGLA: Todo lo demás, mándalo a index.php en la variable 'url'
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Tu configuración de zona horaria se queda igual
+php_value date.timezone 'America/Monterrey'
