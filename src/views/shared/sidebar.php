@@ -65,21 +65,21 @@
             </li>
 
             <li class="side-nav-item">
-                <a href="<?php echo URL_BASE; ?>cotizaciones/index" class="side-nav-link">
+                <a href="<?php echo URL_BASE; ?>cotizador/index" class="side-nav-link">
                     <i class="fas fa-calculator"></i>
                     <span> Cotizador </span>
                 </a>
             </li>
 
             <li class="side-nav-item">
-                <a href="<?php echo URL_BASE; ?>cotizaciones/index" class="side-nav-link">
+                <a href="<?php echo URL_BASE; ?>cotizador/cotizaciones" class="side-nav-link">
                     <i class="fas fa-file-invoice"></i>
                     <span> Cotizaciones </span>
                 </a>
             </li>
 
             <li class="side-nav-item">
-                <a href="<?php echo URL_BASE; ?>cotizaciones/index" class="side-nav-link">
+                <a href="<?php echo URL_BASE; ?>cotizaciones/elementosCotizador" class="side-nav-link">
                     <i class="fas fa-puzzle-piece"></i>
                     <span> ELEMENTOS COTIZADOR </span>
                 </a>
