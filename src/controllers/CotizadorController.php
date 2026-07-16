@@ -16,6 +16,13 @@ class CotizadorController extends Controller {
         $datos= array();
         $this->render('cotizador/cotizaciones', $datos);
     }
+    
+
+    public function info(){
+        $datos = array(['nombre'=>"pruebas"]);
+        echo json_encode($datos);
+        exit;
+    }
 
 
 }

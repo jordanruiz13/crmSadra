@@ -3,6 +3,10 @@
 
 Options All -Indexes
 
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
 # Activar el motor de reescritura
 RewriteEngine On
 
